@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"livePreview.defaultPreviewPath": "/build_local/promotional.html"
+	}
+}
