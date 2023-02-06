@@ -100,7 +100,7 @@ module.exports = {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)',
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
+        sans: ['Inter var', 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
         serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
         mono: ['ui-monospace', 'Menlo', 'Consolas', 'monospace'],
       },
@@ -163,5 +163,6 @@ module.exports = {
     require('tailwindcss-mso'),
     require('tailwindcss-box-shadow'),
     require('tailwindcss-email-variants'),
+    require('@tailwindcss/typography')
   ],
 }
