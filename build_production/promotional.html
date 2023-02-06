@@ -65,6 +65,15 @@
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+a {
+  --tw-text-opacity: 1;
+  color: rgb(64 78 107 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+p {
+  --tw-text-opacity: 1;
+  color: rgb(64 78 107 / var(--tw-text-opacity));
+}
 .footer p {
   line-height: .75rem;
 }
@@ -86,7 +95,7 @@ h3 {
     width: auto !important;
   }
 }</style>  </head>
-  <body style="font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0px; width: 100%; padding: 0px">
+  <body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0px; width: 100%; padding: 0px; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'">
     <div role="article" aria-roledescription="email" aria-label="R for the Rest of Us" lang="en">    </div> <div style="--tw-bg-opacity: 1; background-color: rgb(0 0 0 / var(--tw-bg-opacity)); padding: 0.5rem; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; font-weight: 300">
       <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: auto; margin-right: auto; width: 550px"> <div style="padding: 2rem 3rem; border-top-left-radius: 0.75rem; border-top-right-radius: 0.75rem; --tw-bg-opacity: 1; background-color: rgb(108 171 221 / var(--tw-bg-opacity)); font-size: 1rem; line-height: 1.5rem">
           <svg width="250" height="24" viewBox="0 0 250 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,9 +125,7 @@ h3 {
           </p>
         </div>
         <div class="space-y-6" style="--tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity)); font-size: 1.125rem; line-height: 1.75rem; --tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity))">
-          <div style="padding-left: 3rem; padding-right: 3rem; padding-top: 1rem">
-            undefined
-          </div>
+          <div style="padding-left: 3rem; padding-right: 3rem; padding-top: 1rem">{{message_content}}</div>
           <svg width="550" height="26" viewBox="0 0 550 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="--tw-space-y-reverse: 0; margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));">
 <g clip-path="url(#clip0_23_635)">
   <path d="M16.6535 22.3208C16.9277 22.4033 17.1615 22.6508 17.4599 22.5408C18.0325 22.3299 18.1616 22.7974 18.2664 23.1183C18.4017 23.4219 18.4526 23.7651 18.4123 24.1024C18.372 24.4397 18.2423 24.755 18.0406 25.0066C17.6051 25.5841 17.2825 25.3274 16.7583 25.2724C16.0486 25.1808 15.1454 24.6674 15.218 23.8424C15.2703 23.5218 15.4083 23.2273 15.6131 22.9991C15.7075 22.8052 15.8241 22.6264 15.9599 22.4674C16.0783 22.3844 16.2098 22.3284 16.347 22.3024C16.4487 22.2763 16.5548 22.2826 16.6535 22.3208Z" fill="#404E6B"></path>
@@ -211,9 +218,8 @@ h3 {
 </defs>
 </svg>
 <div style="padding-left: 3rem; padding-right: 3rem; padding-bottom: 0px; padding-top: 0.5rem; text-align: center; --tw-space-y-reverse: 0; margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))">
-  <p style="font-style: italic">
-    P.S. Veniam consequat minim sunt dolor voluptate qui fugiat ad
-    occaecat.
+  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); font-style: italic">
+    P.S. R in 3 Months start next month. <a href="https://rfortherestofus.com/3months/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: underline; text-underline-offset: 2px">Sign up to be the first to find out when enrollment opens</a>.
   </p>
 </div>
           <svg width="550" height="26" viewBox="0 0 550 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="--tw-space-y-reverse: 0; margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));">
@@ -310,20 +316,20 @@ h3 {
           <div class="space-x-8" style="padding: 2rem 3rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); --tw-space-y-reverse: 0; margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))">
             <div class="space-y-4" style="grid-column: span 2 / span 2">
               <h2 style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); font-size: 1.875rem; line-height: 2.25rem; font-weight: 700">Hi, I'm David</h2>
-              <p style="--tw-space-y-reverse: 0; margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1rem * var(--tw-space-y-reverse));">
+              <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); --tw-space-y-reverse: 0; margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1rem * var(--tw-space-y-reverse));">
                 Think you know what an R user looks like? I’m probably not what
                 you have in mind. I’m not a hardcore quant (my PhD is in
                 anthropology). I’m not a coder ready to jump on you for any
                 small mistake.
               </p>
-              <p style="--tw-space-y-reverse: 0; margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1rem * var(--tw-space-y-reverse));">
+              <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); --tw-space-y-reverse: 0; margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1rem * var(--tw-space-y-reverse));">
                 I want to help others avoid the pain that I went through
                 learning R. A teacher at heart (shoutout to my former second
                 grade students), I make R less scary and more fun (yes, fun).
               </p>
             </div>
             <div style="--tw-space-x-reverse: 0; margin-right: calc(2rem * var(--tw-space-x-reverse)); margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));">
-              <img src="images/dk-square.jpg" style="height: 8rem; width: 8rem; border-radius: 9999px" alt="">
+              <img src="https://github.com/rfortherestofus/convertkit-templates/raw/dev/src/images/dk-square.jpg" style="height: 8rem; width: 8rem; border-radius: 9999px" alt="">
             </div>
           </div>
           <div style="--tw-bg-opacity: 1; background-color: rgb(238 238 238 / var(--tw-bg-opacity)); --tw-space-y-reverse: 0; margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))">
@@ -363,35 +369,35 @@ h3 {
                   <h3 style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); margin-top: 0.25rem; font-size: 1.5rem; line-height: 2rem; font-weight: 700">Courses</h3>
                   <ul class="space-y-1 visited-text-white" style="margin-left: 0px; list-style-type: none; padding-left: 0px; text-decoration-line: none">
                     <li>
-                      <a href="https://rfortherestofus.com/courses/getting-started/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Getting Started with R</a>
+                      <a href="https://rfortherestofus.com/courses/getting-started/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Getting Started with R</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/fundamentals/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Fundamentals of R</a>
+                      <a href="https://rfortherestofus.com/courses/fundamentals/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Fundamentals of R</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/going-deeper/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Going Deeper with R</a>
+                      <a href="https://rfortherestofus.com/courses/going-deeper/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Going Deeper with R</a>
                     </li>
                   </ul>
                 </td>
                 <td style="width: 225px">
                   <ul class="space-y-1" style="margin-left: 0px; list-style-type: none; padding-left: 0px">
                     <li>
-                      <a href="https://rfortherestofus.com/courses/glamour/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">The Glamour of Graphics</a>
+                      <a href="https://rfortherestofus.com/courses/glamour/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">The Glamour of Graphics</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/git-github/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Using Git and GitHub with R</a>
+                      <a href="https://rfortherestofus.com/courses/git-github/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Using Git and GitHub with R</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/mapping/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Mapping with R</a>
+                      <a href="https://rfortherestofus.com/courses/mapping/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Mapping with R</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/data-cleaning/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Data Cleaning with R</a>
+                      <a href="https://rfortherestofus.com/courses/data-cleaning/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Data Cleaning with R</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/package-development/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Package Development with R</a>
+                      <a href="https://rfortherestofus.com/courses/package-development/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Package Development with R</a>
                     </li>
                     <li style="--tw-space-y-reverse: 0; margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse))); margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));">
-                      <a href="https://rfortherestofus.com/courses/inferential-statistics/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none">Inferential Statistics with R</a>
+                      <a href="https://rfortherestofus.com/courses/inferential-statistics/" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: none;">Inferential Statistics with R</a>
                     </li>
                   </ul>
                 </td>
@@ -517,7 +523,7 @@ h3 {
                 </td>
                 <td style="width: 450px">
                   <h3 style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); margin-top: 0.25rem; font-size: 1.5rem; line-height: 2rem; font-weight: 700">Training</h3>
-                  <p>
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity));">
                     Invest in your people, not in expensive software, by moving
                     your team to R.
                   </p>
@@ -649,7 +655,7 @@ h3 {
                 </td>
                 <td style="width: 450px">
                   <h3 style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); margin-top: 0.25rem; font-size: 1.5rem; line-height: 2rem; font-weight: 700">Consulting</h3>
-                  <p>
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity));">
                     Helping organizations communicate more effectively and
                     efficiently.
                   </p>
@@ -754,15 +760,19 @@ h3 {
 </svg>
             <table class="footer" style="padding: 2rem 3rem; font-size: 0.875rem; line-height: 1.25rem" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
-                <td style="width: 250px; vertical-align: top" valign="top">
-                  <p style="line-height: .75rem;">Had enough emails?</p>
-                  <p style="line-height: .75rem;">You can <a href="undefined" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: underline">unsubscribe</a> at any time.</p>
+                <td style="width: 350px; vertical-align: top" valign="top">
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); line-height: .75rem;">Had enough emails?</p>
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); line-height: .75rem;">
+                    You can
+                    <a href="{{ unsubscribe_url }}" style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); text-decoration-line: underline">unsubscribe</a>
+                    at any time.
+                  </p>
                 </td>
-                <td style="width: 250; vertical-align: top" valign="top">
-                    <p style="line-height: .75rem;">R for the Rest of Us</p>
-                    <p style="line-height: .75rem;">3519 NE 15th Avenue</p>
-                    <p style="line-height: .75rem;">Suite #167</p>
-                    <p style="line-height: .75rem;">Portland, OR 97212</p>
+                <td style="width: 200px; vertical-align: top" valign="top">
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); line-height: .75rem;">R for the Rest of Us</p>
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); line-height: .75rem;">3519 NE 15th Avenue</p>
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); line-height: .75rem;">Suite #167</p>
+                  <p style="--tw-text-opacity: 1; color: rgb(64 78 107 / var(--tw-text-opacity)); line-height: .75rem;">Portland, OR 97212</p>
                 </td>
               </tr>
             </table>
