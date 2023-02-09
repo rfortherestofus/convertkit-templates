@@ -49,7 +49,7 @@
     <block name="head"></block>
   </head>
   <body
-    class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased]"
+    class="m-0 p-0 w-full font-sans [word-break:break-word] [-webkit-font-smoothing:antialiased]"
   >
     <if condition="page.preheader">
       <div class="hidden">
@@ -151,9 +151,7 @@
           </p>
         </div>
         <div class="space-y-6 bg-white text-lg text-[#404E6B]">
-          <div class="prose px-12 pt-4">
-            {{ message_content }}
-          </div>
+          <div class="prose px-12 pt-4">{{ message_content }}</div>
 
           <component src="src/components/ps.html"> </component>
           <component src="src/components/divider.html"> </component>
@@ -175,7 +173,10 @@
               </p>
             </div>
             <div>
-              <img class="rounded-full h-32 w-32" src="images/dk-square.jpg" />
+              <img
+                class="rounded-full h-32 w-32"
+                src="https://github.com/rfortherestofus/convertkit-templates/raw/dev/src/images/dk-square.jpg"
+              />
             </div>
           </div>
 
@@ -510,15 +511,21 @@
 
             <table class="text-sm inner-padding footer">
               <tr>
-                <td class="w-[250px] align-top">
+                <td class="w-[350px] align-top">
                   <p>Had enough emails?</p>
-                  <p>You can <a class="underline" href="{{ unsubscribe_url }}">unsubscribe</a> at any time.</p>
+                  <p>
+                    You can
+                    <a class="underline" href="{{ unsubscribe_url }}"
+                      >unsubscribe</a
+                    >
+                    at any time.
+                  </p>
                 </td>
-                <td class="w-[250] align-top">
-                    <p>R for the Rest of Us</p>
-                    <p>3519 NE 15th Avenue</p>
-                    <p>Suite #167</p>
-                    <p>Portland, OR 97212</p>
+                <td class="w-[200px] align-top">
+                  <p>R for the Rest of Us</p>
+                  <p>3519 NE 15th Avenue</p>
+                  <p>Suite #167</p>
+                  <p>Portland, OR 97212</p>
                 </td>
               </tr>
             </table>

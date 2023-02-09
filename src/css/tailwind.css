@@ -19,8 +19,6 @@
   color-scheme: light dark;
 }
 
-@import url("https://rsms.me/inter/inter.css");
-
 .inner-padding {
   @apply py-8 px-12;
 }
@@ -31,6 +29,10 @@ body {
 
 a {
   @apply text-[#404E6B] no-underline;
+}
+
+p {
+  @apply text-[#404E6B];
 }
 
 .footer p {
