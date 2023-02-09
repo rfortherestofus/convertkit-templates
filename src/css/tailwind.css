@@ -58,3 +58,7 @@ table {
 .footer-section p {
   @apply my-0 text-sm;
 }
+
+.courses p {
+  @apply my-0;
+}
