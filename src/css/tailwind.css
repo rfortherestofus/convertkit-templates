@@ -23,16 +23,16 @@
   @apply py-8 px-12;
 }
 
-body {
+body, *, div {
   @apply font-sans;
 }
 
 a {
-  @apply text-[#404E6B] no-underline;
+  @apply text-[#404E6B];
 }
 
 p {
-  @apply text-[#404E6B];
+  @apply text-[#404E6B] leading-relaxed text-base;
 }
 
 .footer p {
@@ -45,4 +45,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
   @apply text-2xl font-bold mt-1;
+}
+
+.table-with-padding {
+  @apply inner-padding;
+}
+
+table {
+  @apply mx-auto w-[550px];
+}
+
+.footer-section p {
+  @apply my-0 text-sm;
 }
