@@ -40,11 +40,11 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-[#404E6B];
+  @apply text-[#404E6B] leading-relaxed;
 }
 
 h3 {
-  @apply text-2xl font-bold mt-1;
+  @apply text-2xl font-bold mt-1 leading-relaxed;
 }
 
 .table-with-padding {
