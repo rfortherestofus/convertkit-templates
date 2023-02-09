@@ -27,7 +27,7 @@ body, *, div {
   @apply font-sans;
 }
 
-p, ul, li, a, h1, h2, h3, h4, h5, h6 {
+p, ul, li, a, h1, h2, h3, h4, h5, h6, blockquote {
   @apply text-[#404E6B];
 }
 
@@ -65,5 +65,13 @@ table {
 
 .courses p {
   @apply my-0;
+}
+
+.blockquote {
+  @apply italic;
+}
+
+.blockquote:before {
+  @content: url()
 }
 
