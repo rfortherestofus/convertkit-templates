@@ -54,3 +54,7 @@ h3 {
 table {
   @apply mx-auto w-[550px];
 }
+
+.footer-section p {
+  @apply my-0 text-sm;
+}
