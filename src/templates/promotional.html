@@ -37,7 +37,8 @@
         h6,
         div,
         * {
-          font-family: Inter, 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif';
+          font-family: Inter, "ui-sans-serif", "system-ui", "-apple-system",
+            '"Segoe UI"', "sans-serif";
           mso-line-height-rule: exactly;
         }
       </style>
@@ -73,73 +74,30 @@
     <div
       class="bg-repeat bg-left-top px-2 pt-8 bg-[#404E6B]"
       style="
-        background-image: url(https://github.com/rfortherestofus/convertkit-templates/raw/tables/src/images/bg-graph.png);
+        background-image: url(https://github.com/rfortherestofus/convertkit-templates/raw/tables/src/images/bg-graph.svg);
       "
     >
+    
       <!-- Blue background header -->
 
-      <table class="bg-[#6cabdd] table-with-padding">
-        <tr>
-          <td>
-            <img
-              src="https://github.com/rfortherestofus/convertkit-templates/raw/tables/src/images/rru-logo-white.png"
-              class="w-[50px] h-[57px]"
-            />
-            <p class="text-white">
-              Officia sunt non voluptate eiusmod elit consectetur aliquip
-              pariatur fugiat. adf
-            </p>
-          </td>
-        </tr>
-      </table>
+      <component src="src/components/header.html"> </component>
 
       <!-- Content -->
 
-      <table class="bg-white table-with-padding">
-        <tr>
-          <td>
-            <p>
-              {{ message_content }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <component src="src/components/ps.html"> </component>
+      <component src="src/components/content.html"> </component>
 
       <!-- PS -->
 
-      <table class="bg-white table-with-padding">
-        <tr>
-          <td>
-            <p>
-              Eu dolor nostrud quis elit consequat ullamco voluptate ullamco
-              tempor. Laboris exercitation ex aliqua. Voluptate aliquip eu dolor
-              fugiat minim consequat id reprehenderit deserunt. Et consequat
-              culpa ullamco deserunt enim ea eiusmod elit laborum elit veniam
-              minim ea ea proident.
-            </p>
-          </td>
-        </tr>
-      </table>
+      <component src="src/components/ps.html"> </component>
+
+
+      <!-- Bio -->
+
+     <component src="src/components/bio.html"> </component>
 
       <!-- Here to help -->
 
-      <table class="bg-[#eeeeee] table-with-padding">
-        <tr>
-          <td>
-            <p>
-              Eu dolor nostrud quis elit consequat ullamco voluptate ullamco
-              tempor. Laboris exercitation ex aliqua. Voluptate aliquip eu dolor
-              fugiat minim consequat id reprehenderit deserunt. Et consequat
-              culpa ullamco deserunt enim ea eiusmod elit laborum elit veniam
-              minim ea ea proident.
-
-              {{ unsubscribe_link }}
-            </p>
-          </td>
-        </tr>
-      </table>
+      <component src="src/components/here-to-help.html"> </component>
     </div>
   </body>
 </html>

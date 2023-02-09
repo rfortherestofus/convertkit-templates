@@ -32,7 +32,7 @@ a {
 }
 
 p {
-  @apply text-[#404E6B] leading-relaxed;
+  @apply text-[#404E6B] leading-relaxed text-base;
 }
 
 .footer p {
@@ -48,5 +48,9 @@ h3 {
 }
 
 .table-with-padding {
-  @apply mx-auto w-[550px] inner-padding;
+  @apply inner-padding;
+}
+
+table {
+  @apply mx-auto w-[550px];
 }
