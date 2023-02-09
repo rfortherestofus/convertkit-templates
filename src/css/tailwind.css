@@ -67,11 +67,8 @@ table {
   @apply my-0;
 }
 
-.blockquote {
+blockquote p {
   @apply italic;
 }
 
-.blockquote:before {
-  @content: url()
-}
 
