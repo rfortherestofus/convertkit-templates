@@ -27,12 +27,12 @@ body, *, div {
   @apply font-sans;
 }
 
-a {
+p, ul, li, a, h1, h2, h3, h4, h5, h6 {
   @apply text-[#404E6B];
 }
 
 p {
-  @apply text-[#404E6B] leading-relaxed text-base;
+  @apply leading-relaxed text-base;
 }
 
 .footer p {
@@ -40,11 +40,15 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-[#404E6B] leading-relaxed;
+  @apply leading-relaxed;
+}
+
+h2 {
+  @apply leading-tight;
 }
 
 h3 {
-  @apply text-2xl font-bold mt-1 leading-relaxed;
+  @apply text-xl sm:text-2xl font-bold mt-1 leading-relaxed;
 }
 
 .table-with-padding {
@@ -62,3 +66,4 @@ table {
 .courses p {
   @apply my-0;
 }
+
