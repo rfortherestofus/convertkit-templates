@@ -28,19 +28,11 @@ body, *, div {
 }
 
 p, ul, li, a, h1, h2, h3, h4, h5, h6, blockquote {
-  @apply text-[#404E6B];
+  @apply text-[#404E6B] leading-relaxed;
 }
 
 p {
-  @apply leading-relaxed text-base;
-}
-
-.footer p {
-  @apply leading-3;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @apply leading-relaxed;
+  @apply text-base;
 }
 
 h2 {
@@ -58,6 +50,12 @@ h3 {
 table {
   @apply mx-auto;
 }
+
+
+.footer p {
+  @apply leading-3;
+}
+
 
 .footer-section p {
   @apply my-0 text-sm;
