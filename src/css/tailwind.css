@@ -28,11 +28,11 @@ body {
 }
 
 a {
-  @apply text-[#404E6B] no-underline;
+  @apply text-[#404E6B];
 }
 
 p {
-  @apply text-[#404E6B];
+  @apply text-[#404E6B] leading-relaxed;
 }
 
 .footer p {
@@ -45,4 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
   @apply text-2xl font-bold mt-1;
+}
+
+.table-with-padding {
+  @apply mx-auto w-[550px] inner-padding;
 }
