@@ -23,7 +23,7 @@
   @apply py-8 px-12;
 }
 
-body {
+body, *, div {
   @apply font-sans;
 }
 

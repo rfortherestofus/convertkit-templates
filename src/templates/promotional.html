@@ -34,8 +34,10 @@
         h3,
         h4,
         h5,
-        h6 {
-          font-family: "Segoe UI", sans-serif;
+        h6,
+        div,
+        * {
+          font-family: Inter, 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif';
           mso-line-height-rule: exactly;
         }
       </style>
@@ -71,7 +73,7 @@
     <div
       class="bg-repeat bg-left-top px-2 pt-8 bg-[#404E6B]"
       style="
-        background-image: url(images/bg-graph.png);
+        background-image: url(https://github.com/rfortherestofus/convertkit-templates/raw/tables/src/images/bg-graph.png);
       "
     >
       <!-- Blue background header -->
@@ -97,11 +99,7 @@
         <tr>
           <td>
             <p>
-              Eu dolor nostrud quis elit consequat ullamco voluptate ullamco
-              tempor. Laboris exercitation ex aliqua. Voluptate aliquip eu dolor
-              fugiat minim consequat id reprehenderit deserunt. Et consequat
-              culpa ullamco deserunt enim ea eiusmod elit laborum elit veniam
-              minim ea ea proident.
+              {{ message_content }}
             </p>
           </td>
         </tr>
@@ -136,6 +134,8 @@
               fugiat minim consequat id reprehenderit deserunt. Et consequat
               culpa ullamco deserunt enim ea eiusmod elit laborum elit veniam
               minim ea ea proident.
+
+              {{ unsubscribe_link }}
             </p>
           </td>
         </tr>
