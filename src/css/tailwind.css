@@ -31,6 +31,10 @@ p, ul, li, a, h1, h2, h3, h4, h5, h6, blockquote {
   @apply text-[#404E6B] leading-relaxed;
 }
 
+ul {
+  @apply list-inside;
+}
+
 p {
   @apply text-base;
 }
@@ -69,4 +73,6 @@ blockquote p {
   @apply italic;
 }
 
-
+figcaption em {
+  @apply text-sm text-gray-500 font-sans;
+}
