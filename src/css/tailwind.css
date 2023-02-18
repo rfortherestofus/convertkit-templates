@@ -7,8 +7,6 @@
  * utilities can still override them.
 */
 
-
-
 /* Tailwind CSS utility classes */
 @import "tailwindcss/utilities";
 
@@ -23,11 +21,23 @@
   @apply py-8 px-12;
 }
 
-body, *, div {
+body,
+*,
+div {
   @apply font-sans;
 }
 
-p, ul, li, a, h1, h2, h3, h4, h5, h6, blockquote {
+p,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
   @apply text-[#404E6B] leading-relaxed;
 }
 
@@ -55,11 +65,9 @@ table {
   @apply mx-auto;
 }
 
-
 .footer p {
   @apply leading-3;
 }
-
 
 .footer-section p {
   @apply my-0 text-sm;
