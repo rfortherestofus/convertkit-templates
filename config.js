@@ -11,20 +11,21 @@
 
 module.exports = {
   build: {
+    components: {
+      folders: ['src/components'],
+    },
     browsersync: {
-      watch: [
-        './build_local/'
-      ]
+      watch: ["./build_local/"],
     },
     templates: {
-      source: 'src/templates',
+      source: "src/templates",
       destination: {
-        path: 'build_local',
+        path: "build_local",
       },
       assets: {
-        source: 'src/images',
-        destination: 'images',
+        source: "src/images",
+        destination: "images",
       },
     },
   },
-}
+};

@@ -1,27 +1,26 @@
-<component src="divider.html"> </component>
-<table class="bg-white table-with-padding">
+<if condition="page.show_bio">
+  <component src="src/components/divider.html"> </component>
+  <table class="bg-white table-with-padding">
     <tr>
       <td>
-
         <img
-        class="rounded-full h-[128px] w-[128px]"
-        src="https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/dk-square.jpg"
-      />
+          class="rounded-full h-[128px] w-[128px]"
+          src="https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/dk-square.jpg"
+        />
 
         <h2 class="text-3xl font-bold">Hi, I'm David</h2>
         <p>
-          Think you know what an R user looks like? I’m probably not what
-          you have in mind. I’m not a hardcore quant (my PhD is in
-          anthropology). I’m not a coder ready to jump on you for any
-          small mistake.
+          Think you know what an R user looks like? I’m probably not what you
+          have in mind. I’m not a hardcore quant (my PhD is in anthropology).
+          I’m not a coder ready to jump on you for any small mistake.
         </p>
 
         <p>
-          I want to help others avoid the pain that I went through
-          learning R. A teacher at heart (shoutout to my former second
-          grade students), I make R less scary and more fun (yes, fun).
+          I want to help others avoid the pain that I went through learning R. A
+          teacher at heart (shoutout to my former second grade students), I make
+          R less scary and more fun (yes, fun).
         </p>
       </td>
-     
     </tr>
   </table>
+</if>
