@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color-scheme: light dark;">
+---
+title: "R for the Rest of Us"
+show_header_text: FALSE
+show_ps: FALSE
+show_custom_ps: TRUE
+show_bio: TRUE
+show_here_to_help: FALSE
+---
+
+<!DOCTYPE {{{ page.doctype || 'html' }}}>
+<html
+  lang="{{ page.language || 'en' }}"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+>
   <head>
-    <meta charset="utf-8">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
+    <meta charset="{{ page.charset || 'utf-8' }}" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <!--[if mso]>
       <noscript>
         <xml>
@@ -36,123 +51,65 @@
           mso-line-height-rule: exactly;
         }
       </style>
-    <![endif]-->      <title>R for the Rest of Us</title>
-    <style>.bg-white {
-  background-color: white !important;
-}
-:root {
-  color-scheme: light dark;
-}
-body,
-*,
-div {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-p,
-ul,
-li,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote {
-  line-height: 1.625;
-  color: #404E6B;
-}
-ul {
-  list-style-position: inside;
-}
-p {
-  font-size: 16px;
-}
-h2 {
-  line-height: 1.25;
-}
-h3 {
-  margin-top: 4px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.625;
-}
-@media (max-width: 600px) {
-  h3 {
-    font-size: 24px;
-  }
-}
-table {
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer-section p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-blockquote p {
-  font-style: italic;
-}
-figcaption em {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-size: 14px;
-  color: #6b7280;
-}</style>  </head>
-  <body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; padding: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif">
-    <div role="article" aria-roledescription="email" aria-label="R for the Rest of Us" lang="en" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">    </div> <div style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; background-image: url(https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/bg-graph.png); background-color: #404E6B; background-position: left top; background-repeat: repeat; padding-left: 8px; padding-right: 8px; padding-top: 32px; padding-bottom: 32px"> <table style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; margin-left: auto; margin-right: auto; width: 550px; padding: 32px 48px; background-color: #6cabdd" cellpadding="0" cellspacing="0" role="presentation">
-  <tr style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-    <td style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-      <img src="https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/rru-logo-white.png" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; width: 50px" alt="">
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 16px; line-height: 12px; color: #fff">
-        Don't forget that
-        <a href="https://rfortherestofus.com/3months/" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #fff">R in 3 Months</a> is open
-        through early next week!
-      </p>
-    </td>
-  </tr>
-</table> <table style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; margin-left: auto; margin-right: auto; width: 550px; padding: 32px 48px; background-color: white" cellpadding="0" cellspacing="0" role="presentation">
-  <tr style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-    <td style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 16px; line-height: 12px; color: #404E6B">{{ message_content }}</p>    </td>
-  </tr>
-</table> <div style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; background-image: url(https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/divider-line-500.png); margin-left: auto; margin-right: auto; width: 550px; background-color: white; background-position: left top; background-repeat: no-repeat; padding-top: 16px; padding-bottom: 16px"></div>
-<table style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; margin-left: auto; margin-right: auto; width: 550px; padding: 32px 48px; background-color: white" cellpadding="0" cellspacing="0" role="presentation">
-    <tr style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-      <td style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-        <img src="https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/dk-square.jpg" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; height: 128px; width: 128px; border-radius: 9999px" alt="">
-        <h2 style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #404E6B; line-height: 1.25; font-size: 30px; font-weight: 700">Hi, I'm David</h2>
-        <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; font-size: 16px;">
-          Think you know what an R user looks like? I’m probably not what
-          you have in mind. I’m not a hardcore quant (my PhD is in
-          anthropology). I’m not a coder ready to jump on you for any
-          small mistake.
-        </p>
-        <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; font-size: 16px;">
-          I want to help others avoid the pain that I went through
-          learning R. A teacher at heart (shoutout to my former second
-          grade students), I make R less scary and more fun (yes, fun).
-        </p>
-      </td>    </tr>
-  </table> <table class="footer-section" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; width: 550px; padding: 32px 48px; margin-left: auto; margin-right: auto; background-color: #eeeeee" cellpadding="0" cellspacing="0" role="presentation">
-  <tr style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-    <td style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; padding-left: 16px; vertical-align: top" valign="top">
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; margin-top: 0; margin-bottom: 0; font-size: 14px;">Don't want to receive any more R for the Rest of Us emails?</p>
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; margin-top: 0; margin-bottom: 0; font-size: 14px;">
-        You can
-        <a href="{{ unsubscribe_url }}" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; text-decoration-line: underline">unsubscribe</a>
-        at any time.
-      </p>
-    </td>
-  </tr>
-  <tr style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;">
-    <td style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; padding-left: 16px; vertical-align: top" valign="top">
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; margin-top: 0; margin-bottom: 0; font-size: 14px; padding-top: 16px">R for the Rest of Us</p>
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; margin-top: 0; margin-bottom: 0; font-size: 14px;">3519 NE 15th Avenue, Suite #167</p>
-      <p style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.625; color: #404E6B; margin-top: 0; margin-bottom: 0; font-size: 14px;">Portland, OR 97212</p>
-    </td>
-  </tr>
-</table>
+    <![endif]-->
+    <if condition="page.title">
+      <title>R for the Rest of Us</title>
+    </if>
+    <style>
+      {{{ page.css }}}
+    </style>
+    <block name="head"></block>
+  </head>
+  <body
+    class="m-0 p-0 w-full font-sans [word-break:break-word] [-webkit-font-smoothing:antialiased]"
+  >
+    <if condition="page.preheader">
+      <div class="hidden">
+        {{{ page.preheader }}}
+        <each loop="item in Array.from(Array(150))">&#847; </each>
+      </div>
+    </if>
+    <div
+      role="article"
+      aria-roledescription="email"
+      aria-label="R for the Rest of Us"
+      lang="{{ page.language || 'en' }}"
+    >
+      <block name="template"></block>
+    </div>
+
+    <!-- Background -->
+
+    <div
+      class="bg-repeat bg-left-top px-2 py-8 bg-[#404E6B]"
+      style="
+        background-image: url(https://github.com/rfortherestofus/convertkit-templates/raw/main/src/images/bg-graph.png);
+      "
+    >
+      <!-- Blue background header -->
+
+      <component src="src/components/header.html"> </component>
+
+      <!-- Content -->
+
+      <component src="src/components/content.html"> </component>
+
+
+      <!-- PS -->
+
+      <component src="src/components/ps.html"> </component>
+
+      <!-- Bio -->
+
+      <component src="src/components/bio.html"> </component>
+
+      <!-- Here to help -->
+
+      <component src="src/components/here-to-help.html"> </component>
+
+      <!-- Footer -->
+
+      <component src="src/components/footer.html"> </component>
     </div>
   </body>
 </html>
