@@ -41,12 +41,12 @@ blockquote {
   @apply text-[#404E6B] leading-relaxed;
 }
 
-ul {
-  @apply list-inside;
+ul, .unordered_list {
+  @apply list-outside;
 }
 
 p, ul, li {
-  @apply text-base;
+  @apply text-base list-outside;
 }
 
 h2 {
