@@ -5,7 +5,7 @@
     "build": "maizzle build production"
   },
   "dependencies": {
-    "@maizzle/cli": "^1.5.5",
+    "@maizzle/cli": "^1.5.6",
     "@maizzle/framework": "latest",
     "tailwindcss-box-shadow": "^2.0.1",
     "tailwindcss-email-variants": "^2.0.1",
